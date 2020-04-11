@@ -1,6 +1,6 @@
 #+TITLE: Example of Emacs Org-Mode Document
 #+AUTHOR: Elmar Lee
-#+EMAIL: elmar.lee AT qq.com
+#+EMAIL: elmarlee AT Gmail.com
 #+HTML_HEAD: <link rel="stylesheet" href="http://dakrone.github.io/org.css" type="text/css" />
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:t   toc:3 \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:nil
@@ -21,7 +21,7 @@ This document uses the CSS stylesheet [[http://dakrone.github.io/org.css][here]]
 :END:
 
 This document is expected to be helpful when you are interested in composing a document like this document itself. It serves as an example and template of the Org-mode document.
-This document is available as an [[http://doc.norang.ca/org-mode.org][org file]] which is a text file and can be edited in GNU Emacs, and also an html file which is the output of that org file and  exported via GNU Emacs Org-Mode.
+This document is available as an [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.org][org file]] which is a text file and can be edited in GNU Emacs, and also [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.html][an html file]] which is the output of that org file and  exported via GNU Emacs Org-Mode.
 
 This document assumes you've had some experience of GNU Emacs so the
 concepts like the modifier keys =C=, =M=, the way to type the keys like =C-c C-c=, etc. won't be completely
@@ -57,7 +57,7 @@ GNU General Public License for more details.
 
 - Download [[http://ftp.gnu.org/gnu/emacs/windows/emacs-24/emacs-24.5-bin-i686-mingw32.zip][GNU Emacs version 24.5.1 on windows]], and unzip it to something like =c:\emacs=.
 - Download the .emacs/.emacs.d here, and unzip it to for example =c:\home_of_emacs=.
-- Download the org-file and save it to for example =c\temp\org-mode-template.org=.
+- Right click [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.org][the org-file]] and save it to for example =c\temp\org-mode-template.org=.
 - Point emacs home to the path =c:\home_of_emacs=.
    - Type =Win-R= and type =regedit= on the text file, then click =OK= button.
    - Create a String Key =Computer\HKEY_CURRENT_USER\Software\GNU\Emacs\HOME= with the value =c:\home_of_emacs=
