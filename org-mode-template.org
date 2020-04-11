@@ -57,7 +57,7 @@ GNU General Public License for more details.
 
 - Download [[http://ftp.gnu.org/gnu/emacs/windows/emacs-24/emacs-24.5-bin-i686-mingw32.zip][GNU Emacs version 24.5.1 on windows]], and unzip it to something like =c:\emacs=.
 - Download the .emacs/.emacs.d here, and unzip it to for example =c:\home_of_emacs=.
-- Right click [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.org][the org-file]] and save it to for example =c\temp\org-mode-template.org=.
+- Right click [[https://raw.githubusercontent.com/elmarlee/org-mode-template/master/org-mode-template.org][the org-file]] and save it to for example =c\temp\org-mode-template.org=.
 - Point emacs home to the path =c:\home_of_emacs=.
    - Type =Win-R= and type =regedit= on the text file, then click =OK= button.
    - Create a String Key =Computer\HKEY_CURRENT_USER\Software\GNU\Emacs\HOME= with the value =c:\home_of_emacs=

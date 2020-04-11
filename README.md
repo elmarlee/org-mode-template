@@ -1,2 +1,2 @@
 # org-mode-template
-Example and Template of Emacs Org-Mode Document. For the instructions, please right click and save the example [here](https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.html).
+This is an Example and Template of Emacs Org-Mode Document. For the instructions, please clone this repository and open `org-mode-template.html`.
