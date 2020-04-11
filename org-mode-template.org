@@ -11,7 +11,7 @@
 
 This is a document created by [[https://www.orgmode.org/][Org-mode]], which is a part of [[https://www.gnu.org/software/emacs/][GNU Emacs]].
 
-This document uses a lot of materials as listed in [[References]].
+This document uses a lot of materials as listed in the section [[References]].
 
 This document uses the CSS stylesheet [[http://dakrone.github.io/org.css][here]].
 
@@ -55,13 +55,24 @@ GNU General Public License for more details.
 :CUSTOM_ID: GettingStarted
 :END:
 
-- Download [[http://ftp.gnu.org/gnu/emacs/windows/emacs-24/emacs-24.5-bin-i686-mingw32.zip][GNU Emacs version 24.5.1 on windows]], and unzip it to something like ~c:\emacs~.
-- Clone the .emacs/.emacs.d [[https://github.com/elmarlee/dotemacs][here]], and unzip it to for example ~c:\home_of_emacs~.
+Most of this document except the section [[Playing with PlantUML]] needs the official GNU Emacs only as Org-mode is already a part of it.
+For the section [[Playing with PlantUML]], please install PlantUML and integate it with GNU Emacs Org-mode.
+
+** GNU Emacs
+Follow the [[https://www.gnu.org/software/emacs/download.html][official instructions]] to install GNU Emacs.
+
+** PlantUML
+Follow the [[https://plantuml.com/en/starting][official instructions]] to install PlantUML locally:
+- Install java
+- Install Graphviz
+- Download plantuml.jar
+
+** Integrate PlantUML and GNU Emacs
+Follow the the instruction [[https://plantuml.com/emacs][here]] to configure Org-Babel.
+
+** Try this template
 - Right click the [[https://raw.githubusercontent.com/elmarlee/org-mode-template/master/org-mode-template.org][org-file]] and save it to for example ~c\temp\org-mode-template.org~.
-- Point emacs home to the path ~c:\home_of_emacs~.
-   - Type =Win-R= and type =regedit= on the text file, then click =OK= button.
-   - Create a String Key ~Computer\HKEY_CURRENT_USER\Software\GNU\Emacs\HOME~ with the value ~c:\home_of_emacs~
-- Run ~c:\emacs\bin\runemacs.exe~ to invoke GNU Emacs.
+- Run GNU Emacs.
 - Type =C-x C-f= on Emacs, then type ~c\temp\org-mode-template.org~ and =Enter= to open the org file.
 - Make any changes, then type =C-x C-s= to save the file.
 - Type =C-c C-e h h= to export the org file to html file.
@@ -288,7 +299,7 @@ The /Euler theorem/:
 \int_0^\infty e^{-x^2} dx = {{\sqrt{\pi}} \over {2}}
 \]
 
-LaTeX allows to inline such ~\[...\]~ constructs (/quadratic formula/):
+\(\LaTeX\ \) allows to inline such ~\[...\]~ constructs (/quadratic formula/):
 \[ \frac{-b \pm \sqrt{b^2 - 4 a c}}{2a} \]
 #+end_src
 
@@ -298,8 +309,23 @@ The /Euler theorem/:
 \int_0^\infty e^{-x^2} dx = {{\sqrt{\pi}} \over {2}}
 \]
 
-LaTeX allows to inline such ~\[...\]~ constructs (/quadratic formula/):
+\(\LaTeX\ \) allows to inline such ~\[...\]~ constructs (/quadratic formula/):
 \[ \frac{-b \pm \sqrt{b^2 - 4 a c}}{2a} \]
+
+#+begin_src org
+The /sinus theorem/ can be written as the equation:
+
+\begin{equation}
+\frac{\sin\alpha}{a}=\frac{\sin\beta}{b}
+\end{equation}
+#+end_src
+
+The /sinus theorem/ can be written as the equation:
+
+\begin{equation}
+\frac{\sin\alpha}{a}=\frac{\sin\beta}{b}
+\end{equation}
+
 ** Inline math expressions
 #+begin_src org
 The formula \(a^2 + b^2 = c^2\) has been discovered by Pythagoras.
@@ -332,26 +358,6 @@ a^2 + b^2 = c^2
 \end{equation}
 
 See equation [[pythag]].
-
-#+begin_src org
-The /sinus theorem/ can be written as the equation:
-
-\begin{equation}
-\label{eqn:sinalpha}
-\frac{\sin\alpha}{a}=\frac{\sin\beta}{b}
-\end{equation}
-
-See equation [[eqn:sinalpha]].
-#+end_src
-
-The /sinus theorem/ can be written as the equation:
-
-\begin{equation}
-\label{eqn:sinalpha}
-\frac{\sin\alpha}{a}=\frac{\sin\beta}{b}
-\end{equation}
-
-See equation [[eqn:sinalpha]].
 
 * Special Characters
 ** Accents
