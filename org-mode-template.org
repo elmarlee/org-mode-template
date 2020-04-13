@@ -429,8 +429,8 @@ return foo(5)
 
 ** C/C++ code
 #+begin_src C++ -n
-  includes <iostream>
-  std::cout<<"Hello World!\n";
+  #include <iostream>
+  std::cout << "Hello World!\n";
 #+end_src
 ** Note
 #+begin_src org
