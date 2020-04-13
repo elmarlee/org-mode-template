@@ -71,9 +71,9 @@ Follow the [[https://plantuml.com/en/starting][official instructions]] to instal
 Follow the the instruction [[https://plantuml.com/emacs][here]] to configure Org-Babel.
 
 ** Try this template
-- Right click the [[https://raw.githubusercontent.com/elmarlee/org-mode-template/master/org-mode-template.org][org-file]] and save it to for example ~c\temp\org-mode-template.org~.
+- Right click the [[https://raw.githubusercontent.com/elmarlee/org-mode-template/master/org-mode-template.org][org-file]] and save it to for example ~c:\temp\org-mode-template.org~.
 - Run GNU Emacs.
-- Type =C-x C-f= on Emacs, then type ~c\temp\org-mode-template.org~ and =Enter= to open the org file.
+- Type =C-x C-f= on Emacs, then type ~c:\temp\org-mode-template.org~ and =Enter= to open the org file.
 - Make any changes, then type =C-x C-s= to save the file.
 - Type =C-c C-e h h= to export the org file to html file.
 - Open ~c:\temp\org-mode-template.html~ to check the final output.
@@ -415,6 +415,23 @@ The Greek letters \alpha, \beta, and \gamma are used to denote angles.
 - Zero-width non-joiner: \zwnj
 
 * Admonitions
+** Python code
+#+begin_src python -n
+def foo(x):
+  if x>0:
+    return x+1
+
+  else:
+    return x-1
+
+return foo(5)
+#+end_src
+
+** C/C++ code
+#+begin_src C++ -n
+  includes <iostream>
+  std::cout<<"Hello World!\n";
+#+end_src
 ** Note
 #+begin_src org
 #+begin_note
