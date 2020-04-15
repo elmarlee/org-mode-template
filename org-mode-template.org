@@ -68,8 +68,18 @@ Follow the [[https://plantuml.com/en/starting][official instructions]] to instal
 - Download plantuml.jar
 
 ** Integrate PlantUML and GNU Emacs
-Follow the the instruction [[https://plantuml.com/emacs][here]] to configure Org-Babel.
-
+*** Follow the the instruction [[https://plantuml.com/emacs][here]] to configure Org-Babel.
+*** Set more for Org-Babel
+#+begin_example
+(custom-set-variables
+ '(org-babel-load-languages
+   (quote
+    ((emacs-lisp . t)
+     (org . t)
+     (plantuml . t))))
+ '(org-html-htmlize-output-type (quote css))
+)
+#+end_example
 ** Try this template
 - Right click the [[https://raw.githubusercontent.com/elmarlee/org-mode-template/master/org-mode-template.org][org-file]] and save it to for example ~c:\temp\org-mode-template.org~.
 - Run GNU Emacs.
@@ -336,7 +346,7 @@ Let \(a=\sin(x) + \cos(x)\). Then \(a^2 = 2\sin(x)\cos(x)\) because \(\sin^2x +
 
 The formula \(a^2 + b^2 = c^2\) has been discovered by Pythagoras.
 
-Let \(a=\sin(x) + \cos(x)\). Then \(a^2 = 2\sin(x)\cos(x)\) because \(\sin^2x +
+Let \(a=\sin(x) + \cos(x)\). Then \(a^2 = 2\sin(x)\cos(x) +1\) because \(\sin^2x +
 \cos^2x = 1\).
 ** Equation numbers
 #+begin_src org
@@ -417,12 +427,13 @@ The Greek letters \alpha, \beta, and \gamma are used to denote angles.
 * Admonitions
 ** Python code
 #+begin_src python -n
+# foo function
 def foo(x):
-  if x>0:
-    return x+1
+  if x > 0:
+    return x + 1
 
   else:
-    return x-1
+    return x - 1
 
 return foo(5)
 #+end_src
@@ -430,7 +441,12 @@ return foo(5)
 ** C/C++ code
 #+begin_src C++ -n
   #include <iostream>
-  std::cout << "Hello World!\n";
+
+  int main()
+  {
+      // Print "Hello World!"
+      std::cout << "Hello World!\n";
+  }
 #+end_src
 ** Note
 #+begin_src org
