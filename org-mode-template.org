@@ -20,13 +20,19 @@ This document uses the CSS stylesheet [[http://dakrone.github.io/org.css][here]]
 :CUSTOM_ID: HowToUseThisDocument
 :END:
 
-This document is expected to be helpful when you are interested in composing a document like this document itself. It serves as an example and template of the Org-mode document.
-This document is available as an [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.org][org file]] which is text format and can be edited in GNU Emacs, and also a [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.html][html file]] associated with some png image files, which are the output of that org file and exported via GNU Emacs Org-Mode.
+This document is expected to be helpful when you are interested in composing a
+document like this document itself. It serves as an example and template of the
+Org-mode document. This document is available as an [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.org][org file]] which is text
+format and can be edited in GNU Emacs, and also a [[https://github.com/elmarlee/org-mode-template/blob/master/org-mode-template.html][html file]] associated with some
+png image files, which are the output of that org file and exported via GNU
+Emacs Org-Mode.
 
-This document assumes you've had some experience of GNU Emacs so the
-concepts like the modifier keys =C=, =M=, the way to type the keys like =C-c C-c=, etc. won't be completely
-foreign to you. You don't need to know too much of the Org-mode now though it's helpful if you do.
-More information about GNU Emacs can be found in [[https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][The Emacs Manual]], that about org-mode can be in the [[http://orgmode.org/index.html#sec-4.1][Org-Mode Manual]] and [[http://orgmode.org/worg/][Worg Site]].
+This document assumes you've had some experience of GNU Emacs so the concepts
+like the modifier keys =C=, =M=, the way to type the keys like =C-c C-c=, etc.
+won't be completely foreign to you. You don't need to know too much of the
+Org-mode now though it's helpful if you do. More information about GNU Emacs can
+be found in [[https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][The Emacs Manual]], that about org-mode can be in the [[http://orgmode.org/index.html#sec-4.1][Org-Mode Manual]]
+and [[http://orgmode.org/worg/][Worg Site]].
 
 * License
 :PROPERTIES:
@@ -55,8 +61,10 @@ GNU General Public License for more details.
 :CUSTOM_ID: GettingStarted
 :END:
 
-Most of this document except the section [[Playing with PlantUML]] needs the official GNU Emacs only as Org-mode is already a part of it.
-For the section [[Playing with PlantUML]], please install PlantUML and integate it with GNU Emacs Org-mode.
+Most of this document except the section [[Playing with PlantUML]] needs the
+official GNU Emacs only as Org-mode is already a part of it. For the section
+[[Playing with PlantUML]], please install PlantUML and integate it with GNU Emacs
+Org-mode.
 
 ** GNU Emacs
 Follow the [[https://www.gnu.org/software/emacs/download.html][official instructions]] to install GNU Emacs.
@@ -81,15 +89,19 @@ Follow the [[https://plantuml.com/en/starting][official instructions]] to instal
 )
 #+end_example
 ** Try this template
-- Right click the [[https://raw.githubusercontent.com/elmarlee/org-mode-template/master/org-mode-template.org][org-file]] and save it to for example ~c:\temp\org-mode-template.org~.
+- Right click the [[https://raw.githubusercontent.com/elmarlee/org-mode-template/master/org-mode-template.org][org-file]] and save it to for example
+  ~c:\temp\org-mode-template.org~.
 - Run GNU Emacs.
-- Type =C-x C-f= on Emacs, then type ~c:\temp\org-mode-template.org~ and =Enter= to open the org file.
+- Type =C-x C-f= on Emacs, then type ~c:\temp\org-mode-template.org~ and =Enter=
+  to open the org file.
 - Make any changes, then type =C-x C-s= to save the file.
 - Type =C-c C-e h h= to export the org file to html file.
 - Open ~c:\temp\org-mode-template.html~ to check the final output.
 
 * Tables
-Type =| Column A | Column B | Column C |= then type =C-c Enter=, try to type multiple =Tab=. If the contents exceed the cell, type  =C-c C-c= inside the table to re-asign it.
+Type =| Column A | Column B | Column C |= then type =C-c Enter=, try to type
+multiple =Tab=. If the contents exceed the cell, type =C-c C-c= inside the table
+to re-asign it.
 #+begin_src org
 | Column A       | Column B         | Column C       |
 |----------------+------------------+----------------|
